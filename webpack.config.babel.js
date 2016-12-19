@@ -28,6 +28,10 @@ const config = {
       test: /\.js$/,
       exclude: /node_modules/,
       loader: 'babel'
+    },
+    {
+      test: /\.css$/,
+      loaders: ['style', 'css?modules&importLoaders=1&localIdentName=[name]-[hash:base64:5]']
     }]
   },
 
